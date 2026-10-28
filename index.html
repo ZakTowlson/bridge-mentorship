@@ -29,6 +29,7 @@
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:11px;background:var(--gold);color:#0a1020;font-family:'Manrope',sans-serif;font-weight:700;font-size:clamp(1rem,2vw,1.12rem);padding:17px 38px;border-radius:100px;border:none;cursor:pointer;transition:transform .15s,background .2s,box-shadow .2s;box-shadow:0 10px 30px rgba(202,163,28,.22);white-space:nowrap;}
   .btn:hover{background:var(--gold-soft);transform:translateY(-2px);box-shadow:0 14px 36px rgba(202,163,28,.32);}
   .btn svg{width:17px;height:17px;}
+  @media(max-width:480px){.btn{white-space:normal;text-align:center;padding:16px 26px;}}
 
   /* MAIN BOX */
   .hero{padding:clamp(40px,7vh,80px) 0 clamp(32px,5vh,56px);}
@@ -49,6 +50,12 @@
   .inc li{display:flex;align-items:flex-start;gap:12px;font-size:clamp(.96rem,1.8vw,1.04rem);color:var(--muted);}
   .inc .tick{flex:0 0 auto;width:23px;height:23px;border-radius:50%;background:rgba(202,163,28,.14);display:flex;align-items:center;justify-content:center;margin-top:1px;}
   .inc .tick svg{width:13px;height:13px;color:var(--gold);}
+  .ba-title{font-family:'Manrope',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted-2);text-align:left;margin-bottom:16px;}
+  .ba-title.after{color:var(--gold);}
+  .ba{list-style:none;text-align:left;display:flex;flex-direction:column;gap:13px;margin:0 0 34px;}
+  .ba li{display:flex;align-items:flex-start;gap:10px;font-size:clamp(.96rem,1.8vw,1.04rem);color:var(--muted);line-height:1.5;}
+  .ba.after li{color:#fff;font-weight:600;}
+  .ba .emo{flex:0 0 auto;width:28px;text-align:center;font-size:1.1rem;line-height:1.5;}
   .invest{font-size:clamp(1.05rem,2.2vw,1.25rem);font-weight:700;margin-bottom:6px;}
   .invest-note{color:var(--muted-2);font-size:.86rem;font-weight:600;letter-spacing:.02em;margin-bottom:28px;}
   .entry-line{color:#fff;font-weight:700;font-size:clamp(1rem,2vw,1.12rem);letter-spacing:-0.01em;margin-top:6px;}
@@ -98,11 +105,29 @@ fbq('init','1597948488639558');fbq('track','PageView');
       <h1 class="brand"><span class="gold">BRIDGE<sup style="font-size:.32em;vertical-align:super;font-weight:700;letter-spacing:0;">™</sup></span></h1>
       <p class="tier">6-Week · 1:1 Mentorship</p>
 
-      <p class="hook">You're doing everything you can — so why does nothing seem to change?</p>
+      <p class="ba-title">YOU NOW:</p>
+      <ul class="ba">
+        <li><span class="emo" aria-hidden="true">🔄</span><span>Keep starting over, only to end up back where you started</span></li>
+        <li><span class="emo" aria-hidden="true">🧩</span><span>Feel like something is missing</span></li>
+        <li><span class="emo" aria-hidden="true">🎯</span><span>Lack purpose, direction and drive</span></li>
+        <li><span class="emo" aria-hidden="true">🔒</span><span>Feel stuck in the same patterns and habits</span></li>
+        <li><span class="emo" aria-hidden="true">🤔</span><span>Know you're capable of more but don't know what's holding you back</span></li>
+        <li><span class="emo" aria-hidden="true">📉</span><span>Set goals but struggle to follow through</span></li>
+        <li><span class="emo" aria-hidden="true">⚖️</span><span>Struggle to balance your ambitions with your health, relationships and faith</span></li>
+        <li><span class="emo" aria-hidden="true">🚶</span><span>Try to figure everything out alone</span></li>
+      </ul>
 
-      <p class="p">You set the goals, make the plans, and try to do better. Yet somehow, you end up back where you started.</p>
-      <p class="p">The <span style="color:var(--gold);font-weight:700;">BRIDGE</span> method helps you identify what's holding you back, change the patterns keeping you stuck, and become the person capable of building the life you want.</p>
-      <p class="p">Whether it's business, career, relationships, health or faith — real change starts with you.</p>
+      <p class="ba-title after">YOU AFTER BRIDGE:</p>
+      <ul class="ba after">
+        <li><span class="emo" aria-hidden="true">🧠</span><span>Understand what's been holding you back</span></li>
+        <li><span class="emo" aria-hidden="true">🎯</span><span>Gain clarity on what you truly want and why</span></li>
+        <li><span class="emo" aria-hidden="true">💪</span><span>Build the discipline to follow through on your goals</span></li>
+        <li><span class="emo" aria-hidden="true">🔓</span><span>Break the patterns keeping you stuck</span></li>
+        <li><span class="emo" aria-hidden="true">🧱</span><span>Develop the identity and habits needed to build the life you want</span></li>
+        <li><span class="emo" aria-hidden="true">📈</span><span>Turn your intentions into consistent action</span></li>
+        <li><span class="emo" aria-hidden="true">⚖️</span><span>Bring your actions into alignment with your values</span></li>
+        <li><span class="emo" aria-hidden="true">🤝</span><span>Have a personalised action plan, direct accountability and a brotherhood behind you</span></li>
+      </ul>
 
       <p class="entry-line">BRIDGE is the <span style="color:var(--gold)">entry point</span> to all my other mentorships and programmes — everything starts here.</p>
 
